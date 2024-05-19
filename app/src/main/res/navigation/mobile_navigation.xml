@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.ck_4_navigation_drawer.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_favourites"
+        android:name="com.example.ck_4_navigation_drawer.ui.favourites.FavouritesFragment"
+        android:label="@string/menu_favourites"
+        tools:layout="@layout/fragment_favourites" />
+
+    <fragment
+        android:id="@+id/nav_authorization"
+        android:name="com.example.ck_4_navigation_drawer.ui.authorization.AuthorizationFragment"
+        android:label="@string/menu_authorization"
+        tools:layout="@layout/fragment_authorization" />
+
+    <fragment
+        android:id="@+id/nav_SecondActivity"
+        android:name="com.example.ck_4_navigation_drawer.ui.home.SecondFragment"
+        android:label="@string/menu_SecondFragment"
+        tools:layout="@layout/fragment_second" />
+
+    <fragment
+        android:id="@+id/nav_RegFragment"
+        android:name="com.example.ck_4_navigation_drawer.ui.authorization.RegFragment"
+        android:label="@string/menu_RegFragment"
+        tools:layout="@layout/fragment_reg"
+        />
+
+    <action
+        android:id="@+id/action_homeFragment_to_secondFragment"
+        app:destination="@id/nav_SecondActivity" />
+    <action
+        android:id="@+id/action_AuthorizationFragment_to_RegFragment"
+        app:destination="@id/nav_RegFragment" />
+</navigation>
