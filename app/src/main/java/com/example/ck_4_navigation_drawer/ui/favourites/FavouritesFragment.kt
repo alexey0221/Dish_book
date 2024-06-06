@@ -27,6 +27,8 @@ import io.ktor.client.features.json.*
 import io.ktor.client.request.*
 import kotlinx.coroutines.*
 
+var FavouritesDishArray = mutableSetOf<Dish>()
+
 class FavouritesFragment : Fragment()
 {
 
